@@ -26,7 +26,8 @@ it("Cari Nama Kampus", () => {
     .and('have.class', 'ant-select-item-option-content')
     .click()
 
-    cy.get('.btn-peminat').click()
+    cy.get('.btn-peminat').click() 
+    
   })
  
 })
