@@ -3,7 +3,7 @@ describe('daftar kampus lewat form depan', () => {
       cy.visit('https://dev.maukuliah.id/')
     })
 
-it("Cari Nama Kampus", () => {
+it("Mulai Daftar", () => {
 
     cy.get(':nth-child(1) > .form-side-right > .ant-input').type('Pendaftar')
     cy.get(':nth-child(2) > .form-side-right > .ant-input').type('email@gmail.com')
