@@ -1,6 +1,6 @@
 describe('test cari kampus sampai pendaftaran', () => {
     beforeEach(() => {
-      cy.visit('https://dev.maukuliah.id/')
+      cy.visit('baseURL')
     })
 
 it("Cari Nama Kampus", () => {
@@ -10,7 +10,7 @@ it("Cari Nama Kampus", () => {
     cy.get('.row-kampus')
       .should('be.contain', 'Politeknik Elektronika Negeri Surabaya')
     cy.get('.row-kampus').click()
-    cy.scrollTo('bottom')
+    //cy.scrollTo('bottom')
     cy.contains('Tertarik Mendaftar').click({force: true})
   
     cy.get(':nth-child(1) > .form-group > .form-control').type('Putri')
